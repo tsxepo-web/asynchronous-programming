@@ -6,7 +6,7 @@
         RsaPresidents();
         Console.WriteLine();
         Console.WriteLine("Asynchronous Operation");
-        RsaPresidentTimePeriod();
+        RsaPresidentsReversed();
         Console.Read();
     }
 
@@ -17,8 +17,7 @@
         President3();
         President4();
     }
-
-    static void RsaPresidentTimePeriod()
+    static void RsaPresidentsReversed()
     {
         Task.Run(() =>
         {
@@ -43,21 +42,18 @@
         Console.WriteLine("Nelson Rholihlahla Mandela");
         return "1994";
     }
-
     static string President2()
     {
         Thread.Sleep(200);
         Console.WriteLine("Thabo Mbeki");
         return "1999";
     }
-
     static string President3()
     {
         Thread.Sleep(100);
         Console.WriteLine("Jacob Gedleyihlekisa Zuma");
         return "2009";
     }
-
     static string President4()
     {
         Console.WriteLine("Cyril Ramaphosa");
